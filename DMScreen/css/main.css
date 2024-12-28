@@ -1,0 +1,299 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-screen {
+  width: 375px;
+  height: 812px;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  align-items: center;
+}
+
+.chat-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  width: 100%; 
+  height: 120px;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.corner-tools {
+  display: flex;
+  gap: 120px;
+}
+
+.back-button img{
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.menu-button img{
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.profile-image {
+  width: fit-content;
+  height: fit-content;
+  justify-self: center;
+  justify-content: center;
+}
+.profile-image img{
+  width: 55px;
+  height: 55px;
+  border:#000000;
+  border-radius: 100px;
+  margin-top: 15px;
+  object-fit: cover;
+
+}
+
+.user-name {
+  color: rgba(155, 95, 211, 1);
+  font-family: Poppins, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 5px; 
+  font-weight: bolder;
+}
+
+.header-options {
+  display: flex;
+  gap: 80px;
+}
+
+.tab {
+  color: lightgray;
+  cursor: pointer;
+  position: relative;
+  font-size: 10px;
+}
+
+.tab.active {
+  color: #000000
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; 
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000000; 
+}
+
+
+.messages-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.message-sent {
+  align-self: flex-end;
+  background-color: #a040cc;
+  color: white;
+}
+
+.message-received {
+  align-self: flex-start;
+  background-color: #b5b5b5;
+  color: rgb(255, 255, 255);
+}
+
+.notification {
+  height: 110px;
+  padding: 5px, 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+
+.notification h2{
+  margin-top: 5px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bolder;
+
+}
+.notif-align {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 0px;
+  margin: 10px, 0px;
+}
+
+.notif-image {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notif-image img {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+}
+
+.notification-text {
+  flex-grow: 1;
+  font-size: 10px;
+  line-height: 1.5;
+  margin-right: 5px;
+  margin-bottom: 0px;
+}
+
+.notification-actions {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 10px;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+.notification-actions button {
+  padding: 3px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.button-yes {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.button-no {
+  background-color: rgb(108, 52, 141);
+  color: #ffffff;
+  border: 1px solid #a064d4;
+}
+
+.button-yes:hover {
+  background-color: pink;
+}
+
+.button-no:hover {
+  background-color: rgb(137, 58, 161);
+}
+
+.input-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 5px;
+  padding: 10px 10px;
+  border-top: 1px solid #ecebeb;
+  background-color: white;
+}
+
+.input-section input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  margin-left: 10px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.input-section button {
+  padding: 9px 12px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.input-section button img {
+  width: 17px;
+  height: 22px;
+  justify-self: center;
+}
+
+/* .input-section button:hover {
+  transform: scale(1.1);
+} */
+
+/* Footer Navigation Bar */
+.footer {
+  display: flex;
+  justify-content: space-around; /* Even spacing between icons */
+  align-items: center;
+  position: sticky; /* Positioned relative to phone container */
+  bottom: 0; /* Stick to the bottom of the phone screen */
+  left: 0;
+  width: 100%; /* Full width of the phone container */
+  height: 60px; /* Footer height */
+  background-color: #4D1575; /* Background color */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+  box-sizing: border-box;
+  z-index: 2; /* Ensure it stays above other content */
+}
+
+
+/* Footer Icons */
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon img {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+  transition: transform 0.2s ease; /* Smooth hover effect */
+  cursor: pointer; /* Show pointer on hover */
+}
+
+.footer-icon img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
