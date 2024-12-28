@@ -1,0 +1,146 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e8e8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.phone-screen {
+  width: 375px;
+  height: 812px;
+  background: linear-gradient(180deg, #9e59ad 0%, #f8e6ff 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 5px;
+  background: transparent;
+}
+
+.header .logo img {
+  width: 50px;
+}
+
+
+.sapphire-name {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.header .menu-icon img {
+  width: 30px;
+}
+
+.progress-bar{
+  height: 5px; 
+  position: relative;
+  border-radius: 2px;
+  padding: 2px;
+  background-color: white;
+}
+
+.progress-bar > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(252, 9, 252);
+  position: relative;
+  overflow: hidden;
+}
+
+.slogan {
+  display: flex;
+  padding: 5px 35px;
+  width: 304px;
+  margin-top: 10px;
+  font-size: 27px;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: black;
+}
+
+.description {
+  width: 300px;
+  color: #000; 
+  font-family: Pathway Extreme;
+  font-weight: normal; 
+  font-size: 12px;
+  text-align: center; 
+  align-items: center;
+  justify-content: center;
+  padding: 5px 30px;
+}
+
+.saph-chat {
+  width: 375px;
+  height: 100px;
+  margin-top: 20px;
+  overflow: hidden;
+  display: flex; 
+  align-items: center; 
+}
+
+.Sappho img {
+  width: 100px;
+}
+
+.saph-chatbox {
+  padding: 10px;
+  width: 240px;
+  height: 25px;
+  color: #000; 
+  background-color: #f0f0f0; 
+  border-radius: 10px; 
+  font-family: Pathway Extreme;
+  font-weight: normal; 
+  font-size: 15px;
+  text-align: left;
+}
+
+.answers{
+  width: 375px;
+  height: 500px;
+  justify-items: center;
+}
+
+.answer-prompt{
+  width: 260px;
+  height: 30px;
+  padding: 10px 20px;
+  background-color: #9e59ad;
+  font-size: 14px;
+  margin: 15px;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.back-button{
+  width: 100px;;
+  height: 100px;
+  display: flex; 
+  margin-bottom: 10px;
+
+}
+.back-button .img {
+  width: 50px;
+}
