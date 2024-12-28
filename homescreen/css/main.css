@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #e8e8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 375px;
+  height: 550px; /* Adjust this to control the height of the gradient */
+  background: linear-gradient(#776CC1, #D49EE9);
+  z-index: 1; /* Ensure it appears behind other content */
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.chat-cta {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.chat-cta .carrot img {
+  width: 20px;
+  height: 20px;
+}
+
+.chat-cta .carrot img:hover {
+  background: white;
+  color: white;
+  cursor: pointer;
+}
+
+.phone-screen {
+  width: 375px;
+  height: 812px;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.control-tools {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  z-index: 3;
+  margin-top: 5px;
+}
+
+.logo-button img {
+  width: 60px;
+  height: 60px;
+}
+
+.menu-button img{ 
+  width: 30px;
+  height: 30px;
+
+}
+
+.profile-name {
+  font-size: 30px;
+  color: #D49EE9;
+  text-align: center;
+  z-index: 3;
+  position: relative;
+  margin-top: -30px;
+  font-weight: bolder;
+}
+
+
+.h1 {
+  margin-top: 20px;
+  padding-top: 20px;
+  z-index: 3;
+  position: relative;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 5px;
+  z-index: 3;
+}
+
+.tag {
+  padding: 5px 15px;
+  background: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 12px;
+  z-index: 3;
+}
+
+.tag.active {
+  background: #fff;
+  color: #82488d;
+  z-index: 3;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  z-index: 3;
+}
+
+.profile-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+  z-index: 3;
+}
+
+.compatibility-section {
+  padding: 5px 20px;
+  color: #000000;
+  z-index: 3;
+  position: relative;
+  text-align: center;
+}
+
+.compatibility-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  z-index: 3;
+  justify-self: center;
+  position: relative;
+}
+
+.compatibility-section p {
+  font-size: 14px;
+  line-height: 1.5;
+  z-index: 3;
+  position: relative;
+  font-weight: lighter;
+}
+
+.compatibility-section .b {
+  font-weight: 2000;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #4D1575;
+  padding: 10px 0;
+}
+
+.footer .icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+
+.chat-button {
+  padding: 6px 20px;
+  background-color: #f192b8;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4b226f;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chat-button .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.chat-button:hover {
+  background-color: #d93b7a;
+  color: white;
+}
+
+.next-button {
+  padding: 6px 30px;
+  background-color: #82488d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #6a3871;
+}
+
+
+
