@@ -1,0 +1,317 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e8e8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.curvy-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; 
+  background-size: cover;
+  z-index: -1; 
+}
+.chat-cta {
+  display: flex;
+  justify-content: center;
+  color: #9933cc;
+  font-size: 18px;
+}
+
+.chat-cta .carrot img {
+  width: 20px;
+  height: 20px;
+}
+
+.chat-cta .carrot img:hover {
+  background: white;
+  color: white;
+  cursor: pointer;
+}
+.back-arrow {
+  width: 50px;
+  height: auto;
+
+  cursor: pointer; 
+}
+
+.back-arrow img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.phone-screen {
+  width: 375px;
+  height: 812px;
+  background: linear-gradient(180deg, #d8a7e8 0%, #764bb2 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  position: relative;
+
+}
+
+.phone-screen .content {
+  padding-bottom: 70px; /* Leave space for the footer */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.back-arrow {
+  align-self: flex-start; 
+  margin-bottom: 10px; 
+}
+.back-arrow img {
+  width: 24px; 
+  height: 24px;
+  cursor: pointer;
+}
+
+.profile-name {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.h1 {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+/* Tags Section */
+.tags {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.tag {
+  padding: 5px 15px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.tag.active {
+  background: #fff;
+  color: #82488d;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;
+  width: 370px;
+  padding-left: 5px;
+}
+
+/* Profile Container: Arrange image and badges horizontally */
+.profile-container {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  gap: 20px; /* Space between the image and badges */
+}
+
+/* Profile Image Styling */
+.profile-picture img {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+/* Badges: Arrange badges horizontally */
+.badges {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if badges overflow */
+  gap: 10px; /* Space between badges */
+  align-items: center; /* Align badges in the middle */
+}
+
+/* Badge Styling */
+.badge {
+  background-color: #9b5fd3;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  white-space: nowrap; /* Prevent badge text wrapping */
+  text-align: center;
+}
+
+/* Written Prompts Section */
+.written-prompts {
+  margin: 10px;
+}
+
+.prompt {
+  background-color: white;
+  padding: 10px 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.prompt-title {
+  font-weight: bold;
+  color: #9b5fd3;
+  margin: 0 0 5px;
+}
+
+.prompt-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* Play Button */
+.play-button {
+  background-color: #9b5fd3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Save Button */
+.save-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.save-button {
+  background-color: #9b5fd3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-button:hover {
+  background-color: #864bb8;
+}
+
+/* Footer Navigation Bar */
+.footer {
+  display: flex;
+  justify-content: space-around; /* Even spacing between icons */
+  align-items: center;
+  position: sticky; /* Positioned relative to phone container */
+  bottom: 0; /* Stick to the bottom of the phone screen */
+  left: 0;
+  width: 100%; /* Full width of the phone container */
+  height: 60px; /* Footer height */
+  background-color: #d4c9f4; /* Background color */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+  box-sizing: border-box;
+  z-index: 2; /* Ensure it stays above other content */
+}
+
+
+
+/* Footer Icons */
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon img {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+  transition: transform 0.2s ease; /* Smooth hover effect */
+  cursor: pointer; /* Show pointer on hover */
+}
+
+.footer-icon img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px;
+  margin-top: 5px;
+}
+
+.chat-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  color: #4b226f;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chat-button .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.chat-button:hover {
+  background-color: #ef9ebe;
+  color: white;
+}
+
+.next-button {
+  padding: 10px 20px;
+  background-color: #82488d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #6a3871;
+}
