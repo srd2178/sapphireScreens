@@ -1,0 +1,232 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-screen {
+  width: 375px;
+  height: 812px;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  align-items: center;
+}
+
+.chat-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  width: 100%; 
+  height: 120px;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.header-text {
+  font-size: 20px;
+  color: rgb(224, 149, 230);
+  text-align: left;
+  align-self: left;
+}
+
+.corner-tools {
+  display: flex;
+  gap: 50px;
+}
+
+.logo-button img {
+  width: 60px;
+  height: 60px;
+}
+
+.menu-button img{
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.profile-image {
+  width: fit-content;
+  height: fit-content;
+  justify-self: center;
+  justify-content: center;
+}
+.profile-image img{
+  width: 55px;
+  height: 55px;
+  border:#000000;
+  border-radius: 100px;
+  margin-top: 15px;
+  object-fit: cover;
+
+}
+
+.user-name {
+  color: rgba(155, 95, 211, 1);
+  font-family: Poppins, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 5px; 
+  font-weight: bolder;
+}
+
+.header-options {
+  display: flex;
+  gap: 120px;
+}
+
+.tab {
+  color: lightgray;
+  cursor: pointer;
+  position: relative;
+  font-size: 10px;
+}
+
+.tab.active {
+  color: #000000
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; 
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000000; 
+}
+
+
+.chats-section {
+  width: 100%;
+  height: 620px;
+  background-color: rgb(255, 255, 255);
+}
+
+.chats-section {
+  padding: 10px 15px;
+  overflow-y: auto;
+}
+
+.chat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+
+.chat-image {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.chat-info {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.chat-name {
+  font-size: 16px;
+  font-weight: bolder;
+  color: #333;
+  margin: 0px;
+}
+
+.preview-text {
+  font-size: 10.5px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.chat-timer {
+  margin-bottom: 5px;
+  font-size: 10.5px;
+  color: #000000;
+}
+
+.timer-text {
+  bottom: 0px;
+  right: 7px;
+  position: absolute;
+}
+
+.chat-timer img {
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  bottom: 0px;
+  right: 72px;
+}
+
+.user-turn {
+  font-size: 10px;
+  color: #fff;
+  background-color: #4D1575; /* Purple button */
+  padding: 3px 9px; /* Adjust padding as needed */
+  border-radius: 20px;
+  position: absolute;
+  text-align: center;
+  margin: 0px;
+  top: 7px; /* Offset from the top of the chat row */
+  right: 6px; /* Offset from the right of the chat row */
+}
+
+/* Footer Navigation Bar */
+.footer {
+  display: flex;
+  justify-content: space-around; /* Even spacing between icons */
+  align-items: center;
+  position: sticky; /* Positioned relative to phone container */
+  bottom: 0; /* Stick to the bottom of the phone screen */
+  left: 0;
+  width: 100%; /* Full width of the phone container */
+  height: 60px; /* Footer height */
+  background-color: #4D1575; /* Background color */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+  box-sizing: border-box;
+  z-index: 2; /* Ensure it stays above other content */
+}
+
+
+/* Footer Icons */
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon img {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+  transition: transform 0.2s ease; /* Smooth hover effect */
+  cursor: pointer; /* Show pointer on hover */
+}
+
+.footer-icon img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
